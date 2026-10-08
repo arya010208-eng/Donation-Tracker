@@ -79,6 +79,7 @@ cd backend
 npm install
 npm start
 ```
+*(On Windows PowerShell, if scripts are restricted, run `npm.cmd start` or `node server.js`)*
 
 Backend will run on **`http://localhost:5000`**.
 
@@ -91,8 +92,16 @@ cd frontend
 npm install
 npm run dev
 ```
+*(On Windows PowerShell, use `npm.cmd run dev` if needed)*
 
-Frontend will run on **`http://localhost:3000`**.
+Backend will run on **`http://localhost:5000`** and Frontend on **`http://localhost:3000`**.
+
+> **Windows PowerShell Tip:**
+> If you encounter `running scripts is disabled on this system`, run this one-time command in PowerShell:
+> ```powershell
+> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+> ```
+
 
 ---
 
